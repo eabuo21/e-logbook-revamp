@@ -1,3 +1,22 @@
 .custom-tab [role="tab"]:focus{
     outline: none;
 }
+
+
+.{
+    animation: scalein  2s  ease-in-out ;
+    animation-fill-mode: forwards;
+ 
+    animation-delay: 0.1;
+    transform-origin: top left;
+}
+
+@keyframes  scalein{
+from {
+    transform: scale3d(0, 0, 0);
+
+}
+to{
+    transform: scale3d(1, 1, 1);
+}
+}
